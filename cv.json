@@ -1,0 +1,199 @@
+{
+  "informacion_basica": {
+    "nombre": "José Javier García",
+    "titulo": "Desarrollador Full Stack con mas de 2 años de experiencia",
+    "imagen": "./src/assets/imagenPorfolio.jpg",
+    "correo": "josejaviergarciap123@gmail.com",
+    "telefono": "+58 4247389312",
+    "portafolio": "https://midu.dev",
+    "resumen": "Mas de 2 años de experiencia como Desarrollador Web. Actualmente estudiante de Ingenieria Informatica. Resido en San Cristobal, Venezuela. He trabajado en diversos proyectos freelance, desarrollando soluciones innovadoras y funcionales.",
+    "ubicacion": {
+      "direccion": "",
+      "codigo_postal": "5001",
+      "ciudad": "San Cristobal",
+      "codigo_pais": "VE",
+      "region": "Tachira, Venezuela"
+    },
+    "perfiles": [
+      {
+        "red": "GitHub",
+        "usuario": "Javier-GarciaP",
+        "url": "https://github.com/Javier-GarciaP"
+      }
+    ]
+  },
+  "experiencia_laboral": [
+    {
+      "empresa": "Laboratorio Clinico Vitaly",
+      "puesto": "Desarrollador Freelance",
+      "url": null,
+      "fecha_inicio": "2024-08-01",
+      "fecha_fin": "2024-01-04",
+      "resumen": "Desarrolle una aplicacion de escritorio para la gestion completa del laboratorio, incluyendo la automatizacion de reportes medicos.",
+      "logros_destacados": [
+        "Automatizacion de procesos administrativos y medicos"
+      ]
+    },
+    {
+      "empresa": "Distribuidora de Insumos Yelmar",
+      "puesto": "Desarrollador Freelance",
+      "url": null,
+      "fecha_inicio": "2024-02-10",
+      "fecha_fin": "2024-03-09",
+      "resumen": "Diseñe y desarrolle una aplicacion de escritorio para la gestion de inventarios y ventas al por mayor para instituciones educativas.",
+      "logros_destacados": [
+        "Optimizacion de la gestion de inventarios y pedidos"
+      ]
+    }
+  ],
+  "educacion": [
+    {
+      "institucion": "Universidad Nacional Experimental del Tachira",
+      "url": "https://www.unet.edu.ve/",
+      "area": "Ingenieria Informatica",
+      "tipo_estudio": "Ingenieria",
+      "fecha_inicio": "2023-10-07",
+      "fecha_fin": null,
+      "calificacion": null,
+      "cursos_destacados": [
+        "Academia Aptugo - SQL Basico"
+      ]
+    }
+  ],
+  "habilidades": [
+    {
+      "nombre": "HTML",
+      "nivel": "Experto",
+      "palabras_clave": [
+        "Desarrollo Web", "Frontend"
+      ]
+    },
+    {
+      "nombre": "CSS",
+      "nivel": "Experto",
+      "palabras_clave": [
+        "Desarrollo Web", "Frontend", "Diseno Responsive"
+      ]
+    },
+    {
+      "nombre": "JavaScript",
+      "nivel": "Experto",
+      "palabras_clave": [
+        "Desarrollo Web", "Frontend", "Backend", "Full Stack"
+      ]
+    },
+    {
+      "nombre": "Bootstrap",
+      "nivel": "Avanzado",
+      "palabras_clave": [
+        "Framework CSS", "Diseno Responsive", "Frontend"
+      ]
+    },
+    {
+      "nombre": "Java",
+      "nivel": "Avanzado",
+      "palabras_clave": [
+        "Desarrollo Web", "Backend", "Programacion Orientada a Objetos"
+      ]
+    },
+    {
+      "nombre": "MySQL",
+      "nivel": "Avanzado",
+      "palabras_clave": [
+        "Bases de Datos", "SQL", "Gestion de Datos"
+      ]
+    },
+    {
+      "nombre": "Git",
+      "nivel": "Avanzado",
+      "palabras_clave": [
+        "Control de Versiones", "Colaboracion", "Repositorio"
+      ]
+    },
+    {
+      "nombre": "GitHub",
+      "nivel": "Avanzado",
+      "palabras_clave": [
+        "Control de Versiones", "Colaboracion", "Proyectos Open Source"
+      ]
+    },
+    {
+      "nombre": "React",
+      "nivel": "Avanzado",
+      "palabras_clave": [
+        "Libreria de JavaScript", "Frontend", "Interfaces de Usuario"
+      ]
+    }
+  ],
+  "idiomas": [
+    {
+      "idioma": "Espanol",
+      "fluidez": "Nativo"
+    }
+  ],
+  "proyectos": [
+    {
+      "nombre": "mars.codes",
+      "activo": true,
+      "descripcion": "Historia interactiva con retos de programacion para viajar a Marte.",
+      "logros_destacados": [
+        "Elige tu propia aventura",
+        "En desarrollo"
+      ],
+      "url": "https://mars.codes"
+    },
+    {
+      "nombre": "AdventJS",
+      "activo": true,
+      "descripcion": "Retos de programacion en JavaScript para cada dia de diciembre hasta Navidad.",
+      "logros_destacados": [
+        "+1 millon de visitas",
+        "Multilenguaje",
+        "Soporte para JavaScript y TypeScript"
+      ],
+      "url": "https://adventjs.dev"
+    },
+    {
+      "nombre": "Codember",
+      "activo": true,
+      "descripcion": "Juego interactivo de programacion con retos y secretos.",
+      "logros_destacados": [
+        "+2000 usuarios activos",
+        "Retos en multiples lenguajes de programacion"
+      ],
+      "url": "https://codember.dev"
+    },
+    {
+      "nombre": "codi.link",
+      "activo": true,
+      "descripcion": "Playground para compartir codigo HTML, CSS y JavaScript.",
+      "logros_destacados": [
+        "100k visitas mensuales",
+        "Desarrollado por la comunidad"
+      ],
+      "url": "https://codi.link",
+      "github": "https://github.com/midudev/codi.link"
+    },
+    {
+      "nombre": "Pruebas Tecnicas",
+      "activo": true,
+      "descripcion": "Plataforma gratuita de pruebas tecnicas de empresas para practicar programacion.",
+      "logros_destacados": [
+        "100% gratuito",
+        "+500 soluciones colaborativas"
+      ],
+      "url": "https://pruebastecnicas.com",
+      "github": "https://github.com/midudev/pruebas-tecnicas"
+    },
+    {
+      "nombre": "miduConf",
+      "activo": true,
+      "descripcion": "Conferencia de programacion en streaming para la comunidad hispanohablante.",
+      "logros_destacados": [
+        "+15k tickets vendidos",
+        "+50k espectadores en directo"
+      ],
+      "url": "https://miduconf.com"
+    }
+  ]
+}

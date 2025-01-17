@@ -1,0 +1,76 @@
+---
+import { educacion } from "@cv";
+import Seccion from "./Seccion.astro";
+---
+
+<Seccion titulo="Educación">
+  <ul>
+    {
+      educacion.map(({ institucion, url, area, fecha_inicio, fecha_fin }) => {
+        const startYear = new Date(fecha_inicio).toLocaleDateString();
+        const endYear =
+          fecha_fin != null
+            ? new Date(fecha_fin).toLocaleDateString()
+            : "Actual";
+        return (
+          <li>
+            <article>
+              <div>
+                <a href={url} target="_blank">
+                  <h3>{institucion}</h3>
+                </a>
+                <h4>{area}</h4>
+              </div>
+              <div>
+                <time datetime={fecha_inicio} data-title={fecha_inicio}>
+                  {startYear}
+                </time>
+                {" - "}
+                <time datetime={fecha_fin} data-title={fecha_fin}>
+                  {endYear}
+                </time>
+              </div>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
+</Seccion>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  article {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  h3 {
+    font-weight: 500;
+    color: #111;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #111;
+  }
+
+  h4 {
+    color: #222;
+    font-weight: 400;
+  }
+
+  time {
+    color: #555;
+    font-size: 0.85rem;
+    min-width: 102px;
+  }
+</style>

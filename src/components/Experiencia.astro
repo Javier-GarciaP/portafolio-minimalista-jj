@@ -1,0 +1,81 @@
+---
+import { experiencia_laboral } from "@cv";
+import Seccion from "./Seccion.astro";
+---
+
+<Seccion titulo="Experiencia Laboral">
+  <ul>
+    {
+      experiencia_laboral.map(
+        ({ empresa, puesto, fecha_inicio, fecha_fin, resumen }) => {
+          const startYear = new Date(fecha_inicio).toLocaleDateString();
+          const endYear =
+            fecha_fin != null
+              ? new Date(fecha_fin).toLocaleDateString()
+              : "Actual";
+          return (
+            <li>
+              <article>
+                <header>
+                  <div>
+                    <h3>{empresa}</h3>
+                    <h4>{puesto}</h4>
+                  </div>
+                  <div>
+                    <time datetime={fecha_inicio} data-title={fecha_inicio}>
+                      {startYear}
+                    </time>
+                    {" - "}
+                    <time datetime={fecha_fin} data-title={fecha_fin}>
+                      {endYear}
+                    </time>
+                  </div>
+                </header>
+                <footer>
+                  <p>{resumen}</p>
+                </footer>
+              </article>
+            </li>
+          );
+        }
+      )
+    }
+  </ul>
+</Seccion>
+
+<style>
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  article{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  article h3 {
+    font-weight: 500;
+    color: #111;
+  }
+
+  h4 {
+    color: #222;
+    font-weight: 400;
+  }
+
+  time {
+    color: #555;
+    font-size: 0.85rem;
+    min-width: 102px;
+  }
+</style>

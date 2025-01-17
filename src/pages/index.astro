@@ -1,0 +1,40 @@
+---
+import SobreMi from "src/components/SobreMi.astro";
+import Intro from "../components/Intro.astro";
+import Seccion from "../components/Seccion.astro";
+import Layout from "../layouts/Layout.astro";
+import Experiencia from "src/components/Experiencia.astro";
+import Educacion from "src/components/Educacion.astro";
+import Proyectos from "src/components/Proyectos.astro";
+import Habilidades from "src/components/Habilidades.astro";
+import AtajoDeTeclado from "@/components/AtajoDeTeclado.astro";
+---
+
+<Layout>
+	<main>
+		<Intro />
+    <SobreMi/>
+    <Experiencia/>
+    <Educacion/>
+    <Proyectos/>
+    <Habilidades/>
+	</main>
+  <!--
+  Esto agrega la funcionalidad de atajos de teclado
+  <AtajoDeTeclado/>
+  -->
+</Layout>
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  }
+</style>

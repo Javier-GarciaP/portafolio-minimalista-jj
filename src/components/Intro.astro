@@ -1,0 +1,125 @@
+---
+import { informacion_basica } from "@cv";
+const { nombre, titulo, imagen, ubicacion, perfiles, correo, telefono } =
+  informacion_basica;
+const direccion = `${ubicacion.ciudad}, ${ubicacion.region}`;
+
+import Seccion from "./Seccion.astro";
+import Mail from "src/icons/Mail.astro";
+import Phone from "src/icons/Phone.astro";
+import GitHub from "src/icons/GitHub.astro";
+import WorldMap from "src/icons/WorldMap.astro";
+---
+
+<Seccion>
+  <div class="contenedor">
+    <div class="informacion">
+      <h1>{nombre}</h1>
+      <h2>{titulo}</h2>
+      <span><WorldMap /> {direccion}</span>
+      <footer class="no-imprimir">
+        <a
+          href={`mailto:${correo}`}
+          title={`Enviar un correo electrónico a ${nombre} al correo ${correo}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Mail />
+        </a>
+        <a
+          href={`tel:${telefono}`}
+          title={`Llamar por teléfono a ${nombre} al número ${telefono}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Phone />
+        </a>
+
+        <a
+          href={perfiles[0].url}
+          title={`Visitar el perfil de ${perfiles[0].usuario} en ${perfiles[0].red}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GitHub />
+        </a>
+      </footer>
+      <footer class="imprimir">
+        
+      </footer>
+    </div>
+    <figure>
+      <img src={imagen} alt={nombre} />
+    </figure>
+  </div>
+</Seccion>
+
+<style>
+  .contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-right: 32px;
+  }
+
+  figure img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 125px;
+    border-radius: 32px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    color: #444;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-wrap: balance;
+  }
+
+  span {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.85rem;
+    letter-spacing: -0.05rem;
+  }
+
+  footer {
+    color: #555;
+    font-size: 0.65rem;
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+  }
+
+  footer a {
+    color: #777;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eee;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  footer a:hover {
+    background: #eee;
+    border: 1px solid #ddd;
+  }
+</style>

@@ -1,0 +1,11 @@
+---
+import Seccion from "./Seccion.astro";
+
+import { informacion_basica } from "@cv";
+const {resumen} = informacion_basica
+
+---
+
+<Seccion titulo="Sobre Mi">
+    <p>{resumen}</p>
+</Seccion>
